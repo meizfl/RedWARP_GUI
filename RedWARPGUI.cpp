@@ -90,6 +90,17 @@ void generate_config() {
             interface_section = false;
         }
 
+        // Remove ipv6
+        if (ipv6_enabled == 'n') {
+            size_t pos;
+            while ((pos = line.find(", 2606:4700")) != string::npos) {
+                line.erase(pos, 50); // default 50
+            }
+            while ((pos = line.find(", ::/0")) != string::npos) {
+                line.erase(pos, 8); // default 8
+            }
+        }
+
         if (interface_section && line.find("PrivateKey =") == 0) {
             outfile << line << endl;
             outfile << "S1 = 0\nS2 = 0\nJc = 120\nJmin = 23\nJmax = 911\nH1 = 1\nH2 = 2\nH3 = 3\nH4 = 4\n";
@@ -97,8 +108,6 @@ void generate_config() {
             outfile << "MTU = " << custom_mtu << endl;
         } else if (line.find("Endpoint = ") == 0) {
             outfile << "Endpoint = " << custom_endpoint << endl;
-        } else if (ipv6_enabled == 'n' && (line.find("Address = 2606:4700") == 0 || line.find("AllowedIPs = ::/0") == 0)) {
-            continue;
         } else if (line.find("DNS = ") == 0 && ipv6_enabled == 'n') {
             outfile << "DNS = 208.67.222.222, 208.67.220.220\n";
         } else if (line.find("DNS = ") == 0 && ipv6_enabled == 'y') {
@@ -126,9 +135,9 @@ void generate_config() {
         (content.find("DNS = 208.67.222.222, 208.67.220.220") != string::npos ||
         content.find("DNS = 208.67.222.222, 208.67.220.220, 2620:119:35::35, 2620:119:53::53") != string::npos)) {
         fl_alert("Configuration successfully updated and saved to RedWARP.conf!");
-        } else {
-            fl_alert("An error occurred while updating the configuration.");
-        }
+    } else {
+        fl_alert("An error occurred while updating the configuration.");
+    }
 }
 
 // Callback function for the "Generate" button

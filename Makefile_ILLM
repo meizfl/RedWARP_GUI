@@ -1,1 +1,2 @@
-RedWARP_GUI_ILLM_FLTK140_1.8.0rc4-18112024
+RedWARPGUI: RedWARPGUI.cpp
+	g++ -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64 -D_THREAD_SAFE -D_REENTRANT -O2 -o RedWARPGUI RedWARPGUI.cpp /usr/lib/libfltk_images.a /usr/lib/64/libjpeg.so /usr/lib/64/libpng.so /usr/lib/64/libz.so /usr/lib/libfltk.a -lm -lX11 -lXext -lpthread -lXinerama -lXfixes -lXcursor -lXft -lXrender -lfontconfig -ldl

@@ -1,0 +1,37 @@
+# Название бинарного файла
+TARGET = RedWARPGUI.exe
+
+# Исходный файл
+SRC = RedWARPGUI.cpp
+
+# Компилятор и флаги
+CXX = clang++
+CXXFLAGS = --target=x86_64-w64-mingw32 -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/c++/14 -g -fstack-protector-strong -Wformat -Werror=format-security -D_THREAD_SAFE -D_REENTRANT -O2 -std=gnu++2c -march=x86-64
+LDFLAGS = -lfltk -lpthread -lstdc++ -mwindows
+
+# Путь к файлу info.toml
+INFO_FILE = info.toml
+
+# Сборка
+all: $(TARGET) $(INFO_FILE)
+
+# Правила для создания бинарника
+$(TARGET): $(SRC)
+	$(CXX) $(CXXFLAGS) -o $@ $^ $(LDFLAGS)
+
+# Правило для создания файла info.toml
+$(INFO_FILE):
+	@echo "[platform]" > $(INFO_FILE)
+	@echo "os = \"$(shell uname -s)\"" >> $(INFO_FILE)
+	@echo "arch = \"$(shell uname -m)\"" >> $(INFO_FILE)
+	@echo "" >> $(INFO_FILE)
+	@echo "[compiler]" >> $(INFO_FILE)
+	@echo "name = \"$(shell $(CXX) --version | head -n 1)\"" >> $(INFO_FILE)
+	@echo "version = \"$(shell $(CXX) --version | head -n 1 | cut -d' ' -f3)\"" >> $(INFO_FILE)
+	@echo "" >> $(INFO_FILE)
+	@echo "[build]" >> $(INFO_FILE)
+	@echo "date = \"$(shell date '+%Y-%m-%d %H:%M:%S')\"" >> $(INFO_FILE)
+
+# Очистка
+clean:
+	rm -f $(TARGET) $(INFO_FILE)

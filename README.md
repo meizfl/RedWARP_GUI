@@ -22,8 +22,8 @@ Perfect for users who want a simple, resource-efficient way to connect to WARP w
 ## 🛠 Installation
 
 ### Prerequisites
-- Linux distribution (Ubuntu/Debian recommended)
-- Cloudflare WARP CLI installed: Follow the [official guide](https://developers.cloudflare.com/warp-client/setting-up/linux/)
+- Linux distribution (Ubuntu/Debian recommended) or Windows 7+
+- AmneizaWG instaled: [Windows](https://github.com/amnezia-vpn/amneziawg-windows-client), [Linux](https://github.com/amnezia-vpn/amneziawg-go), [IOS](https://apps.apple.com/app/amneziawg/id6478942365), [Android](https://play.google.com/store/apps/details?id=org.amnezia.awg)
 - Build tools: `g++`, `make`, and FLTK development libraries
 
 ```bash

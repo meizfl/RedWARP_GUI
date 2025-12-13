@@ -13,7 +13,7 @@ Perfect for users who want a simple, resource-efficient way to connect to WARP w
 
 ## ✨ Features
 
-- **One-click connection**: Connect/disconnect with ease.
+- **One-click generation**: Click "Generate" to get a profile for any number of devices.
 - **AmnesiaWG integration**: Better anonymity than standard WireGuard.
 - **Ultra-lightweight**: Built with C++ and FLTK — minimal CPU/RAM usage.
 - **Cross-platform potential**: Primarily tested on Linux, easily portable.

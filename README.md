@@ -36,7 +36,6 @@ sudo apt install libfltk1.3-dev g++ make
 git clone https://github.com/meizfl/RedWARP_GUI.git
 cd RedWARP_GUI
 make          # Compiles the binary
-sudo make install  # Optional: installs to /usr/local/bin
 ./RedWARP_GUI # Launch the app
 ```
 

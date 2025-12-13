@@ -238,7 +238,7 @@ int main() {
 
     Fl_Box label_endpoint(10, 20, 100, 25, "Endpoint:");
     Fl_Input input_endpoint(120, 20, 270, 25);
-    input_endpoint.value("188.114.97.14:4500");
+    input_endpoint.value("162.159.192.1:4500");
 
     Fl_Box label_mtu(10, 60, 100, 25, "MTU:");
     Fl_Input input_mtu(120, 60, 270, 25);

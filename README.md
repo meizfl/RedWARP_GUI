@@ -36,6 +36,10 @@ sudo apt install libfltk1.3-dev g++ make
 git clone https://github.com/meizfl/RedWARP_GUI.git
 cd RedWARP_GUI
 make          # Compiles the binary
+mkdir ./bin
+cd ./bin 
+wget https://github.com/ViRb3/wgcf/releases/download/v2.2.29/wgcf_2.2.29_linux_amd64 # Or another version for your platform
+mv wgcf_2.2.29_linux_amd64 wgcf_amd64
 ./RedWARP_GUI # Launch the app
 ```
 

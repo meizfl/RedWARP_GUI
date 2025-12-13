@@ -42,13 +42,9 @@ make          # Compiles the binary
 ## 🚀 Usage
 
 1. Launch the application.
-2. Click **Connect** to start WARP via AmnesiaWG.
-3. Click **Disconnect** to stop.
-4. Status indicators show connection state in real-time.
-
-> Tip: Run with sudo if you encounter permission issues with WARP interfaces.
-
-*(Add screenshots here for extra wow-factor!)*
+2. Click **Generate** to create config.
+3. Install AmneizaWG and import config there.
+4. Click "connect" and get access to free Internet.
 
 ## 🤝 Contributing
 

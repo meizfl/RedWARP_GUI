@@ -1,5 +1,5 @@
 
-# RedWARP_GUI 🚀
+# RedWARP GUI 🚀
 
 [![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)](https://isocpp.org/)
 [![FLTK](https://img.shields.io/badge/FLTK-Lightweight_GUI-4B8BBE?style=for-the-badge)](https://www.fltk.org/)

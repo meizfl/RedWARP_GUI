@@ -28,7 +28,7 @@ Perfect for users who want a simple, resource-efficient way to connect to WARP w
 
 ```bash
 sudo apt update
-sudo apt install libfltk1.3-dev g++ make
+sudo apt install libfltk1.4-dev clang make
 ```
 
 ### Build & Run

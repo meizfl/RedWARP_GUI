@@ -7,7 +7,7 @@
 
 **A lightweight graphical interface for Cloudflare WARP with AmnesiaWG support.**
 
-RedWARP_GUI is a fast and minimal GUI client for Cloudflare WARP, rewritten in C++ using the FLTK toolkit. It integrates AmnesiaWG (an anonymity-focused WireGuard fork) for enhanced privacy.
+RedWARP_GUI is a fast and minimal GUI config generator for Cloudflare WARP, rewritten in C++ using the FLTK toolkit. It integrates AmnesiaWG (an anonymity-focused WireGuard fork) for enhanced privacy.
 
 Perfect for users who want a simple, resource-efficient way to connect to WARP without heavy dependencies.
 

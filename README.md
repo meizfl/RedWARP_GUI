@@ -66,3 +66,6 @@ If you like it, hit that star button — it means the world! 🌟
 ---
 
 Made with ❤️ and a bit of anonymity by [@meizfl](https://github.com/meizfl)
+
+## For donations
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/V7V61YY60F)

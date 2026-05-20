@@ -5,6 +5,9 @@
 [![FLTK](https://img.shields.io/badge/FLTK-Lightweight_GUI-4B8BBE?style=for-the-badge)](https://www.fltk.org/)
 [![Cloudflare WARP](https://img.shields.io/badge/Cloudflare-WARP-FF6A00?style=for-the-badge&logo=cloudflare)](https://www.cloudflare.com/products/zero-trust/warp-client/)
 
+**The new web version is available here:**
+[RedWARP Web](https://github.com/meizfl/RedWARP_WEB)
+
 **A lightweight graphical interface for Cloudflare WARP with AmnesiaWG support.**
 
 RedWARP GUI is a fast and minimal GUI config generator for Cloudflare WARP, rewritten in C++ using the FLTK toolkit. It integrates AmnesiaWG (an anonymity-focused WireGuard fork) for enhanced privacy.
